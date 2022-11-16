@@ -96,8 +96,7 @@ jobs:
           git_commit_gpgsign: true
       - name: Commit version change
         run: |
-          git add ./projects/dev/tra-api/.version
-          git add ./projects/dev/tra-ui/.version
+          git add ./projects/dev/rki-plz-api/.version
           git commit -s -S -m ":rocket: [rki-plz-api] Update version to ${SHORT_SHA}" -m "Co-authored-by: ${{ github.event.pusher.name }} <${{ github.event.pusher.email }}>"
           git push 
   cleanup:
