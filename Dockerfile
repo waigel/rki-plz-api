@@ -13,6 +13,6 @@ LABEL COMMIT=${GIT_COMMIT}
 LABEL PROJECT="testperfect"
 LABEL COMPANY="novax-digital-gmbh"
 
-COPY data/ .
+COPY data/ data/.
 COPY build/libs/ .
 CMD ["java","-jar","rki-plz-api-0.0.1-SNAPSHOT.jar"]
